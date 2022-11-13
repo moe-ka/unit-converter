@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+:root {
+    --inter-font: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+body{
+    font-family: var(--inter-font);
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+}
+
+.column-left{
+    background-color: #6943FF;
+    color: #FFFFFF;
+}
+
+.column-left h4{
+    font-weight: 800 !important;
+}
+
+.input-grp .input-area{
+    background-color: transparent;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/*Place holder color*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: whitesmoke !important;
+    font-weight:bold;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+      color: whitesmoke !important;
+    font-weight:bold;
+    }
+  :-ms-input-placeholder { /* IE 10+ */
+      color: whitesmoke !important;
+    font-weight:bold;
+  
+    }
+  :-moz-placeholder { /* Firefox 18- */
+      color: whitesmoke !important;
+    font-weight:bold;
+    }
+  /* end placeholder color */
+
+.btn-convert{
+    font-family: var(--inter-font) !important;
+    color: #3D3D3D;
+}
+.column-right{
+    
+    max-height: 444px;
+    background-color: #1F2937;
+}
+
+.column-right .p-2{
+    background-color: #273549;
+}
+.column-right .p-2 h6{
+    font-weight: 600;
+    color: #CCC1FF;
+}
+
+/* arrow disable */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+#result{
+    font-family: var(--inter-font);
+    font-weight: 400;
+    color: whitesmoke;
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    body .container{
+    flex-direction: column !important;
+    margin-top: 1rem;
+    }
+}
+@media (min-width: 992px) { 
+    .column-right{
+        min-width: 550px !important;
+    }
+}
+
+@media (min-width: 768px) { 
+    body{
+        flex-direction: column;
+        display: flex;
+        height: 100vh;
+    }
+}
+
+#copyright{
+    color: #CCC1FF;
+    text-align: center;
+}
+#copyright a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#copyright a:hover{
+    color: #6943FF;
+}
